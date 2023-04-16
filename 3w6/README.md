@@ -2,6 +2,10 @@
 
 This keyboard was bought second-hand from the creator [weteor](https://github.com/weteor).
 
+![Top view](../pictures/3w6_top.jpg)
+
+![Side view](../pictures/3w6_side.jpg)
+
 ## Compiling & flashing
 
 0. `export $QMK_CUSTOM_KEYMAPS=/path/to/dir`

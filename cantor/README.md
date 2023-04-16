@@ -2,6 +2,10 @@
 
 This keyboard was the second self-built QMK keyboard.
 
+![Top view](../pictures/cantor_top.jpg)
+
+![Side view](../pictures/cantor_side.jpg)
+
 ## Compiling & flashing
 
 0. `export $QMK_CUSTOM_KEYMAPS=/path/to/dir`
