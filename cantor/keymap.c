@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         XXXXXXX, XXXXXXX,  KC_VOLD,  KC_MUTE,  KC_VOLU,  XXXXXXX,                                           XXXXXXX, KC_HOME, KC_END,  KC_PGDN, KC_PGUP, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
-        LCTL(KC_LSFT), KC_MPRV,  KC_MPLY,  KC_MSTP,  KC_MNXT,  XXXXXXX,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  XXXXXXX,  LCTL(KC_LSFT),  KC_LCTL,  XXXXXXX,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
