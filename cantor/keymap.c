@@ -28,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         KC_GRV,  KC_EXLM,  KC_AT,    KC_HASH,  KC_DLR,   KC_PERC,                                           KC_CIRC, KC_AMPR, KC_ASTR, XXXXXXX, XXXXXXX, KC_BSPC,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
-        _______, KC_SLSH,  KC_LBRC,  KC_LCBR,  KC_LPRN,  KC_EQL,                                            KC_MINS, KC_RPRN, KC_RCBR, KC_RBRC, KC_BSLS, KC_QUOT,
+        _______, KC_SLSH,  KC_LBRC,  KC_LCBR,  KC_LPRN,  KC_EQL,                                            KC_MINS, KC_RPRN, KC_RCBR, KC_RBRC, KC_BSLS, KC_DQUO,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, KC_RSFT,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         XXXXXXX, XXXXXXX,  KC_VOLD,  KC_MUTE,  KC_VOLU,  XXXXXXX,                                           XXXXXXX, KC_HOME, KC_END,  KC_PGDN, KC_PGUP, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
-        XXXXXXX, XXXXXXX,  XXXXXXX,  LCTL(KC_LSFT),  KC_LCTL,  XXXXXXX,                                     KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  KC_LCTL,  KC_LALT,                                           KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         _______, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
@@ -61,7 +61,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         QK_BOOT, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           XXXXXXX, KC_BTN1, KC_BTN2, XXXXXXX, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
-        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           KC_MS_LEFT, KC_MS_DOWN, KC_MS_UP, KC_MS_RIGHT, XXXXXXX, XXXXXXX,
+        XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
         XXXXXXX, XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,  XXXXXXX,                                           XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,
       //--------------------------------------------------------------------------         ---------------------------------------------------------------------------------
