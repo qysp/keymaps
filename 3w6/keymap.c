@@ -28,9 +28,11 @@ enum layers
     _MISC,
 };
 
-enum trackball_keycodes
+enum custom_keycodes
 {
     BALL_SCR = SAFE_RANGE,
+    COPY,
+    PASTE,
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
@@ -48,8 +50,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     ),
     [_NAV] = LAYOUT(
         XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                                XXXXXXX,  KC_HOME,   KC_END,     KC_PGDN,    KC_PGUP,
-        BALL_SCR,     XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                                KC_LEFT,  KC_DOWN,   KC_UP,      KC_RGHT,    KC_DEL,
-        KC_LSFT,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                                XXXXXXX,  XXXXXXX,   XXXXXXX,    XXXXXXX,    XXXXXXX,
+        BALL_SCR,     XXXXXXX, XXXXXXX, KC_LCTL, KC_LALT,                                                KC_LEFT,  KC_DOWN,   KC_UP,      KC_RGHT,    KC_DEL,
+        KC_LSFT,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                                XXXXXXX,  COPY,      PASTE,      XXXXXXX,    XXXXXXX,
                                         XXXXXXX, XXXXXXX, XXXXXXX,                              KC_LALT, MO(_MISC), XXXXXXX
     ),
     [_NUM] = LAYOUT(
@@ -81,7 +83,15 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         else
             trackball_set_scrolling(false);
         break;
+    case COPY:
+        if (record->event.pressed)
+            SEND_STRING(SS_LCTL("c"));
+        break;
+    case PASTE:
+        if (record->event.pressed)
+            SEND_STRING(SS_LCTL("v"));
+        break;
     }
 
-  return true;
+    return true;
 }
