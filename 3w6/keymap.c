@@ -21,6 +21,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 enum layers
 {
     _ALPHA_QWERTY = 0,
+    _ALPHA_QWERTY_HMR,
     _ALPHA_COLEMAK_DH,
     _SYM,
     _NAV,
@@ -42,6 +43,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_A,         KC_S,    KC_D,    KC_F,    KC_G,                                                   KC_H,     KC_J,      KC_K,       KC_L,       KC_SCLN,
         LSFT_T(KC_Z), KC_X,    KC_C,    KC_V,    KC_B,                                                   KC_N,     KC_M,      KC_COMM,    KC_DOT,     RSFT_T(KC_SLSH),
                        LCTL_T(KC_LGUI), LT(_NAV, KC_TAB), LT(_NUM, KC_SPC),            LALT_T(KC_ENTER), LT(_SYM, KC_BSPC), XXXXXXX
+    ),
+    [_ALPHA_QWERTY_HMR] = LAYOUT(
+        KC_Q,         KC_W,    KC_E,    KC_R,    KC_T,                                                   KC_Y,     KC_U,      KC_I,       KC_O,       KC_P,
+        LGUI_T(KC_A), LALT_T(KC_S), LCTL_T(KC_D), LSFT_T(KC_F), KC_G,                                    KC_H,     RSFT_T(KC_J), RCTL_T(KC_K), LALT_T(KC_L), RGUI_T(KC_SCLN),
+        KC_Z,         KC_X,    KC_C,    KC_V,    KC_B,                                                   KC_N,     KC_M,      KC_COMM,    KC_DOT,     KC_SLSH,
+                     RALT_T(KC_ESC), LT(_NAV, KC_TAB), LT(_NUM, KC_SPC),                       KC_ENTER, LT(_SYM, KC_BSPC), XXXXXXX
     ),
     [_ALPHA_COLEMAK_DH] = LAYOUT(
         KC_Q,         KC_W,    KC_F,    KC_P,    KC_B,                                                   KC_J,     KC_L,      KC_U,       KC_Y,       KC_SCLN,
@@ -74,7 +81,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                         XXXXXXX, XXXXXXX, XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX
     ),
     [_MISC] = LAYOUT(
-        XXXXXXX,      KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX,                                                XXXXXXX, XXXXXXX,    XXXXXXX,    DF(_ALPHA_QWERTY), DF(_ALPHA_COLEMAK_DH),
+        XXXXXXX,      KC_VOLD, KC_MUTE, KC_VOLU, XXXXXXX,                                                XXXXXXX, XXXXXXX,    DF(_ALPHA_QWERTY_HMR),  DF(_ALPHA_QWERTY), DF(_ALPHA_COLEMAK_DH),
         KC_MPRV,      KC_MPLY, KC_MSTP, KC_MNXT, XXXXXXX,                                                XXXXXXX, KC_BTN1,    KC_BTN2,    XXXXXXX,    XXXXXXX,
         XXXXXXX,      XXXXXXX, XXXXXXX, XXXXXXX, XXXXXXX,                                                XXXXXXX, XXXXXXX,    XXXXXXX,    XXXXXXX,    XXXXXXX,
                                         XXXXXXX, XXXXXXX, XXXXXXX,                              XXXXXXX, XXXXXXX, XXXXXXX
